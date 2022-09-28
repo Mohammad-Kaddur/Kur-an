@@ -1,0 +1,211 @@
+/* Global*/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Cairo', sans-serif, Arial;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #243b55;
+
+}
+
+.container {
+    background-color: #090f16;
+    padding: 20px;
+}
+
+/* Start Header */
+
+.container header {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.container header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* End Header */
+
+/* Start Input */
+
+.container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container form label {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.container form input {
+    background-color: #111c2a;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s;
+}
+form input:focus {
+    transform: scale(1.03);
+    background-color: #000;
+}
+
+.container form .date {
+    display: flex;
+    align-items: center;
+}
+
+.container .input form .date>input {
+    flex: 1;
+    margin: 20px;
+}
+
+.container .input form .pay {
+    display: flex;
+    align-items: center;
+}
+
+.container .input form .pay>input {
+    flex: 1;
+    margin: 20px;
+}
+.container .create{
+    text-align: center;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    background-color: #ff00e4;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* End Input */
+
+/* Start Search */
+
+.container .search .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+button{
+    color: #fff;
+    font-size: 2rem;
+    background-color: #ff00e4;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.03);
+    background-color: #ff0000;
+}
+.container .search .box button{
+    color: #fff;
+    font-size: 2rem;
+    background-color: #ff00e4;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border:none;
+}
+.search-by-roomNumber{
+    margin-left: 50px;
+}
+/* End Search */
+
+/* Start Output */
+
+
+.container .output table{
+    width: 100%;
+}
+.container .output table thead tr{
+    position: sticky;
+    top: 0;
+    background-color: #090f16;
+}
+.container .output table tr th{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* margin: 0px 10px; */
+    padding: 10px;
+}
+.container .output table tbody{
+    width: 100%;
+}
+.container .output table tbody tr td{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* border: 1px solid #fff; */
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.tr{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    /* text-align: center; */
+    /* display: block; */
+}
+.idNum{
+    background-color: red;
+}
+
+/* End Output */

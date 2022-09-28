@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management System</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/normaliz.css">
+    <link rel="stylesheet" href="CSS/system.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Studens Info</h1>
+            <h3>Kur'an & Sunnah Sceinces Association</h3>
+        </header>
+        <div class="input">
+            <form action="">
+                <label for="">: الرقم الوطني</label>
+                <input type="number" id="identity">
+                <label for="">: الاسم الكامل</label>
+                <input type="text" id="yourName" placeholder="Your Name">
+                <div class="date">
+                    <label for="">: تاريخ و مكان الميلاد</label>
+                    <input type="date" id="date">
+                    <input type="text" id="datePlace">
+                </div>
+                <div class="date">
+                    <label for="">: رقم الهاتف</label>
+                    <input type="number" id="phoneNumber" placeholder="Your Number Phone">
+                    <label for="">: رقم الغرفة</label>
+                    <input type="number" id="roomNumber" placeholder="Number Room">
+
+                </div>
+                <label for="">: تاريخ الدخول</label>
+                <input type="date" id="dateIntry">
+                <div class="pay">
+                    <label for="">: الدفع</label>
+                    <input type="number" id="pay">
+                    <label for="">$ : التامين</label>
+                    <input type="number" id="securing">
+                    <label for="">: الباقي</label>
+                    <input type="text" id="remainder">
+                </div>
+            </form>
+            <button class="create" id="create">Create</button>
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="text" id="inputSearch">
+            </form>
+            <div class="box">
+                <button class="search-by-name" id="searchByName">Search By Name</button>
+                <button class="search-by-roomNumber" id="searchByRoomNumber">Search By Room Number</button>
+            </div>
+            <div class="deleteAll" id="deleteAll"></div>
+        </div>
+        <div class="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Identity Number</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Phone Number</th>
+                        <th>Room Number</th>
+                        <th>Date Of Entry</th>
+                        <th>Pay</th>
+                        <th>Securing</th>
+                        <th>The Remainder</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="showData" class="">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>1234567892</td>
+                        <td>Mohammad kadour</td>
+                        <td>1996/13/05</td>
+                        <td>05538349289</td>
+                        <td>2022/1/05</td>
+                        <td>1000</td>
+                        <td>50$</td>
+                        <td id="one">000</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="deletes">Delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="JS/system.js"></script>
+</body>
+
+</html>
