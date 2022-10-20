@@ -1,0 +1,272 @@
+* {
+    font-family: 'Cairo', sans-serif, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0f1824;
+    --section-color: #162436;
+    --hover-color: #5c86bc;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1180px;
+    }
+}
+
+.container {
+    margin: auto;
+    padding: 0px 40px;
+}
+
+/* Start Header */
+
+
+header {
+    background-color: var(--main-color);
+    padding: 7px 0px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container #showHide {
+    color: #eee;
+    font-size: 20px;
+    display: none;
+}
+
+.container .iconList {
+    display: none;
+}
+
+.container .iconList ul li>i {
+    font-size: 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.container .iconList {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--section-color);
+    direction: rtl;
+    padding-top: 20px;
+}
+
+.container .shwo {
+    left: 0;
+}
+
+.container .iconList ul #iconInfo {
+    font-size: 25px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.container .iconList ul li {
+    color: #aaa;
+    padding: 20px;
+}
+
+.container .iconList ul li a>i {
+    padding-left: 10px;
+}
+
+.container .iconList ul li a {
+    color: #eee;
+    display: block;
+    padding: 0px 10px 0px 40px;
+    transition: 0.3s;
+}
+
+.container .iconList ul li a:hover {
+    transform: translateX(-10px);
+    color: var(--hover-color);
+}
+
+.container .text {
+    color: #eee;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container .kurLeft ul {
+    display: flex;
+}
+
+.container .kurLeft ul li {
+    color: #eee;
+}
+
+.container .kurLeft ul li a {
+    color: #eee;
+    margin: auto 5px;
+    padding: 0px 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.container .kurLeft ul li a:hover {
+    color: var(--hover-color);
+}
+
+.container .image a {
+    display: flex;
+    align-items: center;
+
+}
+
+.container .image a img {
+    width: 60px;
+}
+
+.container .image a h2 {
+    color: #eee;
+    text-transform: uppercase;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.container .image a h2:hover {
+    color: var(--hover-color);
+}
+
+@media(max-width:1199px) {
+    .container #showHide {
+        display: block;
+    }
+
+    .container .kurLeft #studInfo,
+    .container .kurLeft #stud {
+        display: none;
+    }
+}
+
+
+@media (max-width:991px) {
+
+    .container .kurLeft #course,
+    .container .kurLeft #teach {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+
+    .container .kurLeft #eat,
+    .container .kurLeft #donation,
+    .container .kurLeft #result {
+        display: none;
+    }
+}
+
+/* End Header */
+
+/* Start Section */
+section {
+    background-image: linear-gradient(#000033, #172436, #0f1824);
+    height: calc(100vh - 60px);
+
+}
+
+section .container .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid #00001a;
+    margin-bottom: 40px;
+}
+
+section .container .picture>span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+section .container .pictureInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container .pictureInfo .info {
+    padding: 60px;
+    /* margin: auto 40px; */
+}
+
+section .container .pictureInfo .info>h2 {
+    color: #eee;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Noto Naskh Arabic', serif;
+
+}
+
+section .container .pictureInfo .info>p {
+    width: 500px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #eee;
+    line-height: 2;
+
+}
+
+section .container .pictureInfo>img {
+    width: 350px;
+}
+
+@media(max-width:767px) {
+    section .container .pictureInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    section .container .pictureInfo .info {
+        padding: 100px 40px 0px 40px;
+    }
+
+    section .container .pictureInfo>img {
+        width: 200px;
+    }
+
+}
+
+/* End Section */
